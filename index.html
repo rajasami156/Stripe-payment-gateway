@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stripe Checkout Example</title>
+<script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+
+<h2>Stripe Checkout Example</h2>
+
+<form id="payment-form">
+  <input type="email" id="email" placeholder="Enter your email" required>
+  <input type="text" id="plan-name" value="Basic" readonly>
+  <input type="number" id="amount" placeholder="Enter amount in USD" required min="0.10" step="0.01">
+  <button type="submit">Pay</button>
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>
