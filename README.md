@@ -1,4 +1,4 @@
-# 💳 Stripe Payment Integration with Flask
+# 💳 Stripe Payment Integration with Fastapi
 ### This project is a Flask application that integrates Stripe for processing payments. It provides functionalities for creating checkout sessions and handling Stripe webhooks.
 
 ## Setup
