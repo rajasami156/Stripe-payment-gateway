@@ -5,13 +5,18 @@
 To set up and run this project:
 
 Clone the repository to your local machine.
-Install the required Python packages using pip.
-Create a .env file in the root directory and add your Stripe API key as STRIPE_API_KEY=your_stripe_secret_key_here.
+Install the required Python packages using pip. 
 Replace <URL FOR SUCCESSFUL PAYMENT> and <URL FOR CANCELLED PAYMENT> in app.py with your actual URLs for successful and cancelled payments.
+
+#### Create a .env file in the root directory and add your Stripe API key as:
+
+STRIPE_API_KEY = sk_test_51oW151XH2ssDZJqtzh
+
+SECRET_KEY = 3862e19431fe0b
 
 ## Usage
 
-Start the Flask application by running python app.py.
+Start the Fastapi application by running uvicorn main:app --reload.
 Access the provided endpoints:
 Create Checkout Session: Send a POST request to http://localhost:5000/create_checkout_session with JSON data containing email, amount, and planName to create a new checkout session for payment processing.
 Stripe Webhook: Configure your Stripe account's webhook endpoint to http://localhost:5000/stripe_webhook to handle events like successful payment intents.
